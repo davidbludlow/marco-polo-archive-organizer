@@ -1,7 +1,7 @@
 {
   "tasks": {
-    "start": "deno run --allow-read --allow-write         extract-polos.js",
-    "watch": "deno run --allow-read --allow-write --watch extract-polos.js"
+    "start": "deno run --allow-read=\"C:/Users/david/Desktop\" --allow-write=\"C:/Users/david/Desktop\"         extract-polos.ts",
+    "watch": "deno run --allow-read=\"C:/Users/david/Desktop\" --allow-write=\"C:/Users/david/Desktop\" --watch extract-polos.ts"
   },
   "fmt": {
     "singleQuote": true,

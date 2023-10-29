@@ -1,6 +1,8 @@
 {
   "deno.enable": true,
   "deno.config": "./deno.jsonc",
+  // See https://deno.com/blog/v1.37#denocacheonsave
+  "deno.cacheOnSave": true,
   "[typescript]": {
     "editor.defaultFormatter": "denoland.vscode-deno",
     "editor.formatOnSave": true,
@@ -77,5 +79,4 @@
   "cSpell.words": [
     "Deno"
   ],
-  "diffEditor.hideUnchangedRegions.enabled": true
 }
