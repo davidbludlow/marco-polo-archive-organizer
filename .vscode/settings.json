@@ -1,0 +1,81 @@
+{
+  "deno.enable": true,
+  "deno.config": "./deno.jsonc",
+  "[typescript]": {
+    "editor.defaultFormatter": "denoland.vscode-deno",
+    "editor.formatOnSave": true,
+    "editor.formatOnSaveMode": "file",
+    "editor.insertSpaces": true,
+    "editor.tabSize": 2
+  },
+  "[javascript]": {
+    "editor.defaultFormatter": "denoland.vscode-deno",
+    "editor.formatOnSave": true,
+    "editor.formatOnSaveMode": "file",
+    "editor.insertSpaces": true,
+    "editor.tabSize": 2
+  },
+  "[handlebars]": {
+    "editor.defaultFormatter": "denoland.vscode-deno",
+    "editor.formatOnSave": true,
+    "editor.formatOnSaveMode": "file",
+    "editor.insertSpaces": true,
+    "editor.tabSize": 2
+  },
+  // "[json]": {
+  //   "editor.defaultFormatter": "denoland.vscode-deno",
+  //   "editor.formatOnSave": true,
+  //   "editor.formatOnSaveMode": "file",
+  //   "editor.insertSpaces": true,
+  //   "editor.tabSize": 2
+  // },
+  "[jsonc]": {
+    "editor.defaultFormatter": "denoland.vscode-deno",
+    "editor.formatOnSave": true,
+    "editor.formatOnSaveMode": "file",
+    "editor.insertSpaces": true,
+    "editor.tabSize": 2
+  },
+  "[markdown]": {
+    "editor.defaultFormatter": "denoland.vscode-deno",
+    "editor.formatOnSave": true,
+    "editor.formatOnSaveMode": "file",
+    "editor.insertSpaces": true,
+    "editor.tabSize": 2
+  },
+  // "[vue]": {
+  //   "editor.defaultFormatter": "dprint.dprint",
+  //   "editor.formatOnSave": true,
+  //   "editor.formatOnSaveMode": "file",
+  //   "editor.insertSpaces": true,
+  //   "editor.tabSize": 2,
+  // },
+  // "[yaml]": {
+  //   "editor.defaultFormatter": "dprint.dprint",
+  //   "editor.formatOnSave": true,
+  //   "editor.formatOnSaveMode": "file",
+  //   "editor.insertSpaces": true,
+  //   "editor.tabSize": 2,
+  // },
+
+  // For some reason, the new verson of powershell has problems with this
+  // project, so here we specify the old version of powershell.
+  "terminal.integrated.defaultProfile.windows": "Windows PowerShell",
+  // Do not show that terminal because it would be of the wrong type of
+  // PowerShell (assuming PowerShell Core is installed) (I think)
+  "powershell.integratedConsole.showOnStartup": false,
+
+  // cSpell settings go with the vscode extension that has the ID
+  // streetsidesoftware.code-spell-checker
+  //
+  // "cSpell.ignoreWords" is like "cSpell.words", except that words in
+  // "cSpell.words" may appear in the spelling suggestions list, unlike the
+  // words in "cSpell.ignoreWords"
+  "cSpell.ignoreWords": [
+    "polos"
+  ],
+  "cSpell.words": [
+    "Deno"
+  ],
+  "diffEditor.hideUnchangedRegions.enabled": true
+}

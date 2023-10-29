@@ -1,0 +1,10 @@
+{
+  "tasks": {
+    "start": "deno run --allow-read --allow-write         extract-polos.js",
+    "watch": "deno run --allow-read --allow-write --watch extract-polos.js"
+  },
+  "fmt": {
+    "singleQuote": true,
+    "proseWrap": "preserve"
+  }
+}
