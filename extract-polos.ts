@@ -1,5 +1,6 @@
 // This program extracts polos from all the zip files in a folder and keeps them
-// organized. For example, if you have a folder with zip files like:
+// organized. Then it deletes the zip files that it has successfully extracted.
+// For example, if you have a folder with zip files like:
 //
 // - John_A_1_of_4.zip
 // - John_A_2_of_4.zip
@@ -7,11 +8,14 @@
 // - John_A_4_of_4.zip
 // - David_L_1_of_1.zip
 //
-// Then this program will extract the polos from those zip files and put them
-// into folders with names like:
+// Then this program will extract the polos from those zip files and adds them
+// to folders with names like:
 //
 // - John_A
 // - David_L
+//
+// If those folders already existed and already contained polos, that is all
+// right. The newly extracted polos will be added to the already existing polos.
 //
 // You can run this program with Deno or use Deno compile it into an executable
 // file that can be run on a computer that doesn't have Deno installed. Don't
@@ -29,8 +33,8 @@ import { join, parse } from 'https://deno.land/std@0.204.0/path/mod.ts';
 const denoVersion = Deno.version.deno;
 const expectedDenoVersion = '1.37.2';
 if (expectedDenoVersion !== denoVersion) {
-  throw new Error(
-    `Don't panic! There is a solution: This program was built for deno version ${expectedDenoVersion} but you have deno version ${denoVersion}. You can easily change your deno version (if you are connected to the internet) by running the command:
+  console.warn(
+    `Warning: This program was built for deno version ${expectedDenoVersion} but you have deno version ${denoVersion}. You can easily change your deno version (if you are connected to the internet) by running the command:
 
 deno upgrade --version ${expectedDenoVersion}
 
@@ -70,8 +74,8 @@ for await (const entry of walk(inputFolderPath)) {
     const jsZip = await readZip(zipFilePath);
     await jsZip.unzip(destinationFolderPath);
 
-    // // Delete the zip file after extracting it
-    // await Deno.remove(zipFilePath);
+    // Delete the zip file after extracting it
+    await Deno.remove(zipFilePath);
   }
 }
 
