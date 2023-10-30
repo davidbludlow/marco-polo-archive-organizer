@@ -42,13 +42,20 @@ Then try running this program again. When you are done, you can always easily go
 
 deno upgrade --version ${denoVersion}
 
-No stress!`,
+No stress!
+`,
   );
 }
 
 // Get the first argument on the command line. If there is no argument, then
 // default to the current folder.
 const inputFolderPath = Deno.args[0] || '.';
+let zipFilesExtractedCount = 0;
+
+console.log(
+  `Note that this program is slower than most other zip extractors, so it may take a few minuets to extract each zip file. (I could have made it faster, but I wanted this program to be runnable with Deno, because it is safer for you. A program run with Deno doesn't have permission to do anything harmful to your computer or your data unless you give it permission to do so.)
+`,
+);
 
 await Deno.permissions.request({ name: 'read', path: inputFolderPath });
 await Deno.permissions.request({ name: 'write', path: inputFolderPath });
@@ -73,10 +80,19 @@ for await (const entry of walk(inputFolderPath)) {
     console.log(`Extracting "${zipFileName}" into "${destinationFolderPath}"`);
     const jsZip = await readZip(zipFilePath);
     await jsZip.unzip(destinationFolderPath);
+    zipFilesExtractedCount++;
 
     // Delete the zip file after extracting it
     await Deno.remove(zipFilePath);
   }
 }
 
-console.log(`Done extracting polos from the zip files in "${inputFolderPath}"`);
+if (zipFilesExtractedCount === 0) {
+  console.log(
+    `No zip files with polos found in "${inputFolderPath}". You need to specify a folder that contains zip files with polos.`,
+  );
+} else {
+  console.log(
+    `Done extracting polos from the zip files in "${inputFolderPath}"`,
+  );
+}
