@@ -47,10 +47,14 @@ No stress!
   );
 }
 
-// Get the first argument on the command line. If there is no argument, then
-// default to the current folder.
-const inputFolderPath = Deno.args[0] || '.';
-let zipFilesExtractedCount = 0;
+// Get the first argument on the command line.
+let inputFolderPath: string | undefined | null = Deno.args[0];
+while (!inputFolderPath) {
+  // Ask the user, over and over, until they answer
+  inputFolderPath = prompt(
+    'Where is the folder that contains the .zip files where your polos are?',
+  );
+}
 
 console.log(
   `Note that this program is slower than most other zip extractors, so it may take a few minuets to extract each zip file. (I could have made it faster, but I wanted this program to be runnable with Deno, because it is safer for you. A program run with Deno doesn't have permission to do anything harmful to your computer or your data unless you give it permission to do so.)
@@ -60,6 +64,7 @@ console.log(
 await Deno.permissions.request({ name: 'read', path: inputFolderPath });
 await Deno.permissions.request({ name: 'write', path: inputFolderPath });
 
+let zipFileCount = 0;
 for await (const entry of walk(inputFolderPath)) {
   if (entry.isFile && entry.name.endsWith('.zip')) {
     const zipFilePath = entry.path;
@@ -80,14 +85,14 @@ for await (const entry of walk(inputFolderPath)) {
     console.log(`Extracting "${zipFileName}" into "${destinationFolderPath}"`);
     const jsZip = await readZip(zipFilePath);
     await jsZip.unzip(destinationFolderPath);
-    zipFilesExtractedCount++;
+    zipFileCount++;
 
     // Delete the zip file after extracting it
     await Deno.remove(zipFilePath);
   }
 }
 
-if (zipFilesExtractedCount === 0) {
+if (zipFileCount === 0) {
   console.log(
     `No zip files with polos found in "${inputFolderPath}". You need to specify a folder that contains zip files with polos.`,
   );
