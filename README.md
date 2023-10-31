@@ -56,7 +56,7 @@ Here, you will run the program with Deno. This is the recommended way to run the
 
 1. Put all the downloaded zip files in a folder that doesn't have any non-Marco-Polo zip files in it.
 2. Make a copy of the folder, just in case something goes wrong. (I don't think anything will go wrong.)
-3. Install Deno. (See [here](https://docs.deno.com/runtime/manual/getting_started/installation) for instructions.)
+3. Install Deno. Deno is small and harmless to install. It is well-respected for its security features. See [here](https://docs.deno.com/runtime/manual/getting_started/installation) for install instructions.
 4. Open a terminal. (On Windows, you can do this by pressing the Windows key and typing "powershell" then pressing enter.)
 6. Copy and paste
 ```PowerShell
