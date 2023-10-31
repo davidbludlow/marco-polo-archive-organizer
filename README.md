@@ -25,9 +25,9 @@ This helps you organize your polos (video messages) created with the Marco Polo 
 3. Wait for the email(s) to arrive. Go to the link in the email.
 4. Make sure the URL of the page starts with "marcopolo.me", so you know you are not being scammed.
 5. Enter in your phone number to verify that you are you.
-6. Download all the zip files. If there are many zip files, you may want to use a download manager like [DownThemAll](https://www.downthemall.org/). (Note: I have not personally checked the code of DownThemAll, so I cannot guarantee that it isn't spyware in disguise, but I can say that it makes it very easy and fast to reliably download every link on a page. I just recommend that you disable or uninstall it when you are no longer using it, since I cannot be 100% sure of it's safety.)
+6. Download all the zip files. If there are many zip files, you may want to use a download manager browser extension like [DownThemAll](https://www.downthemall.org/). DownThemAll makes it fast and easy to reliably download every link on a page.
 
-**Warning:** These zip files may contain only your side of the conversation, if your friends have their settings set to not allow people to download their polos. Check it!
+**Warning:** These zip files may contain only your side of the conversation, if your friends have their settings set to not allow other people to download their polos. Check it!
 
 ## Extracting/Organizing The Polos
 
