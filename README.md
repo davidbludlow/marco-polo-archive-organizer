@@ -76,7 +76,7 @@ This way is easier, but it is not recommended, because it involves running some 
 
 1. Put all the downloaded zip files in a folder that doesn't have any non-Marco-Polo zip files in it.
 2. Make a copy of the folder, just in case something goes wrong. (I don't think anything will go wrong.)
-3. If you are on Windows, download the program [extract-polos.exe](extract-polos.exe). If you are on Mac, then do Option 1, because, even though I could have easily created a Mac version of the program, I didn't, because I don't have a Mac to test it on. If you are running Linux, then you are probably too smart to do Option 2. It is not worth the trouble that it would take to run this program on a mobile device.
+3. If you are on Windows, download the program [extract-polos.exe](https://github.com/davidbludlow/marco-polo-archive-organizer/raw/main/extract-polos.exe?download=). If you are on Mac, then do Option 1, because, even though I could have easily created a Mac version of the program, I didn't, because I don't have a Mac to test it on. If you are running Linux, then you are probably too smart to do Option 2. It is not worth the trouble that it would take to run this program on a mobile device.
 4. Put the extract-polos.exe inside of the folder with the zip files.
 5. Run extract-polos.exe.
 7. After waiting for the program to finish, check each conversation and make sure that both sides of the conversation are there! If not, then call your friend and ask them to change their Marco Polo settings to allow other people to download their polos.
