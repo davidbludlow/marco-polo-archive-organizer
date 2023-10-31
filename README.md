@@ -1,10 +1,10 @@
 # The Marco Polo Archive Organizer
 
-This helps you organize your polos (video messages) created with the Marco Polo app. If you do not pay for unlimited storage in Marco Polo, then eventually your polos will be put in the "Trash" in the app. You can download them from the trash, but they come in a bunch of annoying zip files. This program will will take take the polos out of the zip files, organize them into folders by conversation, **and delete the zip files, afterwards.**
+This helps you organize your polos (video messages) created with the Marco Polo app. If you do not pay for unlimited storage in Marco Polo, then eventually your polos will be put in the "Trash" in the app. You can download them from the trash, but they come in a bunch of annoying zip files. This program will take the polos out of the zip files, organize them into folders by conversation, **and delete the zip files, afterward.**
 
 ## How To Mass Download Polos The Most Easily
 
-1. Wait until your polos are old enough that they are put in the "Trash" but not to old enough that they are permanently deleted.
+1. Wait until your polos are old enough that they are put in the "Trash" but not too old that they are permanently deleted.
 2. In the Marco Polo app click on
 
 <image src="./supplemental-docs/pictures/screenshot-1.jpg" width="200px" /> then
@@ -24,10 +24,10 @@ This helps you organize your polos (video messages) created with the Marco Polo 
 3. Repeat that for each conversation. Start with the most important conversations, because there may be a limit to how many conversations you can download per day.
 3. Wait for the email(s) to arrive. Go to the link in the email.
 4. Make sure the URL of the page starts with "marcopolo.me", so you know you are not being scammed.
-5. Enter in your phone number to verify that you are you.
+5. Enter your phone number to verify that you are you.
 6. Download all the zip files. If there are many zip files, you may want to use a download manager browser extension like [DownThemAll](https://www.downthemall.org/). DownThemAll makes it fast and easy to reliably download every link on a page.
 
-**Warning:** These zip files may contain only your side of the conversation, if your friends have their settings set to not allow other people to download their polos. Check it!
+**Warning:** These zip files may contain only your side of the conversation if your friends have their settings set to not allow other people to download their polos. Check it!
 
 ## Extracting/Organizing The Polos
 
@@ -39,7 +39,7 @@ Now you should have a bunch of zip files like:
 - John_A_4_of_4.zip
 - David_L_1_of_1.zip
 
-Then this program will extract the polos from those zip files and adds them
+Then this program will extract the polos from those zip files and add them
 to folders with names like:
 
 - John_A
@@ -52,7 +52,7 @@ There are two ways to run this program:
 <details>
 <summary id="option1">Option 1: The harder, recommended way (click to expand)</summary>
 
-Here, you will run the program with Deno. This is the recommended way to run the program, because it is safer for you. If you run a program with [Deno](https://deno.land) you can be confident that the program will not have the permission/power to harm your computer or your data, unless you give it permission to do so.
+Here, you will run the program with Deno. This is the recommended way to run the program because it is safer for you. If you run a program with [Deno](https://deno.land) you can be confident that the program will not have the permission/power to harm your computer or your data, unless you give it permission to do so.
 
 1. Put all the downloaded zip files in a folder that doesn't have any non-Marco-Polo zip files in it.
 2. Make a copy of the folder, just in case something goes wrong. (I don't think anything will go wrong.)
@@ -77,7 +77,7 @@ This way is easier, but it is not recommended, because it involves running some 
 1. Put all the downloaded zip files in a folder that doesn't have any non-Marco-Polo zip files in it.
 2. Make a copy of the folder, just in case something goes wrong. (I don't think anything will go wrong.)
 3. If you are on Windows, download the program [extract-polos.exe](https://github.com/davidbludlow/marco-polo-archive-organizer/raw/main/extract-polos.exe?download=). If you are on Mac, then do Option 1, because, even though I could have easily created a Mac version of the program, I didn't, because I don't have a Mac to test it on. If you are running Linux, then you are probably too smart to do Option 2. It is not worth the trouble that it would take to run this program on a mobile device.
-4. Put the extract-polos.exe inside of the folder with the zip files.
+4. Move extract-polos.exe into the folder with the zip files.
 5. Run extract-polos.exe.
 7. After waiting for the program to finish, check each conversation and make sure that both sides of the conversation are there! If not, then call your friend and ask them to change their Marco Polo settings to allow other people to download their polos.
 </details>
