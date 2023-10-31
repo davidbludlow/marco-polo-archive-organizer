@@ -72,7 +72,7 @@ into the terminal, then press enter. If it says it doesn't know what "deno" is, 
 <details>
 <summary id="option2">Option 2: The lazy way (click to expand)</summary>
 
-This way is easier, but it is not recommended, because it involves running some program that you downloaded from the internet. The program isn't a virus, but you
+This way is easier, but it is not recommended, because it involves running some program that you downloaded from the internet. This program isn't a virus, but how do you know that?
 
 1. Put all the downloaded zip files in a folder that doesn't have any non-Marco-Polo zip files in it.
 2. Make a copy of the folder, just in case something goes wrong. (I don't think anything will go wrong.)
