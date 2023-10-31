@@ -57,8 +57,12 @@ while (!inputFolderPath) {
 }
 
 console.log(
-  `Note that this program is slower than most other zip extractors, so it may take a few minuets to extract each zip file. (I could have made it faster, but I wanted this program to be runnable with Deno, because it is safer for you. A program run with Deno doesn't have permission to do anything harmful to your computer or your data unless you give it permission to do so.)
-`,
+  'Note that this program is slower than most other zip extractors, so it may take a few minuets to extract each zip file.' +
+    // This flag is used when the program is compiled via `deno task compile`
+    (Deno.args[1] === '--suppress-talking-about-permissions'
+      ? ''
+      : ` (I could have made it faster, but I wanted this program to be runnable with Deno, because it is safer for you. A program run with Deno doesn't have permission to do anything harmful to your computer or your data unless you give it permission to do so.)
+`),
 );
 
 await Deno.permissions.request({ name: 'read', path: inputFolderPath });

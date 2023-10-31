@@ -3,7 +3,7 @@
     "start": "deno run --allow-read=\"C:/Users/david/Desktop/p\" --allow-write=\"C:/Users/david/Desktop/p\"         extract-polos.ts",
     "watch": "deno run --allow-read=\"C:/Users/david/Desktop/p\" --allow-write=\"C:/Users/david/Desktop/p\" --watch extract-polos.ts",
     // Compiling is not necessary.
-    "compile": "deno compile --allow-read=. --allow-write=. extract-polos.ts ."
+    "compile": "deno compile --allow-read=. --allow-write=. extract-polos.ts . --suppress-talking-about-permissions"
   },
   "fmt": {
     "singleQuote": true,
