@@ -52,7 +52,7 @@ let inputFolderPath: string | undefined | null = Deno.args[0];
 while (!inputFolderPath) {
   // Ask the user, over and over, until they answer
   inputFolderPath = prompt(
-    'Where is the folder that contains the .zip files where your polos are?',
+    'Where is the folder that contains the .zip files that contain polos?',
   );
 }
 
