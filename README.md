@@ -1,6 +1,6 @@
 # The Marco Polo Archive Organizer
 
-This helps you organize your polos (video messages) created with the Marco Polo app. If you do not pay for unlimited storage in Marco Polo, then eventually your polos will be put in the "Trash" in the app. You can download them from the trash, but they come in a bunch of annoying zip files. This program will take the polos out of the zip files, organize them into folders by conversation, **and delete the zip files, afterward.**
+This helps you organize your polos (video messages) created with the [Marco Polo](https://marcopolo.me) app. If you do not pay for unlimited storage in Marco Polo, then eventually your polos will be put in the "Trash" in the app. You can download them from the trash, but they come in a bunch of annoying zip files. This program will take the polos out of the zip files, organize them into folders by conversation, **and delete the zip files, afterward.**
 
 ## How To Mass Download Polos The Most Easily
 
