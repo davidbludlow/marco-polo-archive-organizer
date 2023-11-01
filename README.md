@@ -59,10 +59,10 @@ Here, you will run the program with Deno. This is the recommended way to run the
 3. Install Deno. Deno is small and harmless to install. It is well-respected for its security features. See [here](https://docs.deno.com/runtime/manual/getting_started/installation) for install instructions.
 4. Open a terminal. (On Windows, you can do this by pressing the Windows key and typing "powershell" then pressing enter.)
 6. Copy and paste
-```PowerShell
-deno run https://raw.githubusercontent.com/davidbludlow/marco-polo-archive-organizer/main/extract-polos.ts
-```
-into the terminal, then press enter. If it says it doesn't know what "deno" is, then maybe restart your terminal or maybe you didn't install Deno correctly.
+   ```
+   deno run https://raw.githubusercontent.com/davidbludlow/marco-polo-archive-organizer/main/extract-polos.ts
+   ```
+   into the terminal, then press enter. If it says it doesn't know what "deno" is, then maybe restart your terminal or maybe you didn't install Deno correctly.
 7. When it asks, tell it where the folder with the zip files is.
 8. When it asks for permission to read or write that folder, say yes.
 9. After waiting for the program to finish, check each conversation and make sure that both sides of the conversation are there! If not, then call your friend and ask them to change their Marco Polo settings to allow other people to download their polos.
