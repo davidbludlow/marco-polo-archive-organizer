@@ -56,16 +56,17 @@ Here, you will run the program with Deno. This is the recommended way to run the
 
 1. Put all the downloaded zip files in a folder that doesn't have any non-Marco-Polo zip files in it.
 2. Make a copy of the folder, just in case something goes wrong. (I don't think anything will go wrong.)
-3. Install Deno. Deno is small and harmless to install. It is well-respected for its security features. See [here](https://docs.deno.com/runtime/manual/getting_started/installation) for install instructions.
-4. Open a terminal. (On Windows, you can do this by pressing the Windows key and typing "powershell" then pressing enter.)
-5. Copy and paste
+3. Look over the names of the files. If you have two correspondents with the same first name and last initial, then the program will probably mix their polos. Manually separate them before running the program.
+4. Install Deno. Deno is small and harmless to install. It is well-respected for its security features. See [here](https://docs.deno.com/runtime/manual/getting_started/installation) for install instructions.
+5. Open a terminal. (On Windows, you can do this by pressing the Windows key and typing "powershell" then pressing enter.)
+6. Copy and paste
    ```
    deno run https://raw.githubusercontent.com/davidbludlow/marco-polo-archive-organizer/main/extract-polos.ts
    ```
    into the terminal, then press enter. If it says it doesn't know what "deno" is, then maybe restart your terminal or maybe you didn't install Deno correctly.
-6. When it asks, tell it where the folder with the zip files is.
-7. When it asks for permission to read or write that folder, say yes.
-8. After waiting for the program to finish, check each conversation and make sure that both sides of the conversation are there! If not, then call your friend and ask them to change their Marco Polo settings to allow other people to download their polos.
+7. When it asks, tell it where the folder with the zip files is.
+8. When it asks for permission to read or write that folder, say yes.
+9. After waiting for the program to finish, check each conversation and make sure that both sides of the conversation are there! If not, then call your friend and ask them to change their Marco Polo settings to allow other people to download their polos.
 
 </details>
 
@@ -76,9 +77,10 @@ This way is easier, but it is not recommended, because it involves running some 
 
 1. Put all the downloaded zip files in a folder that doesn't have any non-Marco-Polo zip files in it.
 2. Make a copy of the folder, just in case something goes wrong. (I don't think anything will go wrong.)
-3. If you are on Windows, download the program [extract-polos.exe](https://github.com/davidbludlow/marco-polo-archive-organizer/raw/main/extract-polos.exe?download=). If you are on Mac, then do Option 1, because, even though I could have easily created a Mac version of the program, I didn't, because I don't have a Mac to test it on. If you are running Linux, then you are probably too smart to do Option 2. It is not worth the trouble that it would take to run this program on a mobile device.
-4. Move extract-polos.exe into the folder with the zip files.
-5. Run extract-polos.exe.
-6. After waiting for the program to finish, check each conversation and make sure that both sides of the conversation are there! If not, then call your friend and ask them to change their Marco Polo settings to allow other people to download their polos.
+3. Look over the names of the files. If you have two correspondents with the same first name and last initial, then the program will probably mix their polos. Manually separate them before running the program.
+4. If you are on Windows, download the program [extract-polos.exe](https://github.com/davidbludlow/marco-polo-archive-organizer/raw/main/extract-polos.exe?download=). If you are on Mac, then do Option 1, because, even though I could have easily created a Mac version of the program, I didn't, because I don't have a Mac to test it on. If you are running Linux, then you are probably too smart to do Option 2. It is not worth the trouble that it would take to run this program on a mobile device.
+5. Move extract-polos.exe into the folder with the zip files.
+6. Run extract-polos.exe.
+7. After waiting for the program to finish, check each conversation and make sure that both sides of the conversation are there! If not, then call your friend and ask them to change their Marco Polo settings to allow other people to download their polos.
 
 </details>
