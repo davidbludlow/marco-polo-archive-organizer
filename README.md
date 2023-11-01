@@ -52,7 +52,7 @@ There are two ways to run this program:
 <details>
 <summary id="option1">Option 1: The harder, recommended way (click to expand)</summary>
 
-Here, you will run the program with Deno. This is the recommended way to run the program because it is safer for you. If you run a program with [Deno](https://deno.land) you can be confident that the program will not have the permission/power to harm your computer or your data, unless you give it permission to do so.
+Here, you will run the program with Deno. This is the recommended way to run the program because it is safer for you. If you run a program with [Deno](https://deno.land) you can be confident that the program will not have the permission/power to harm your computer or your data, unless you give it permission to do so. It can't even send your data over the internet without your permission.
 
 1. Put all the downloaded zip files in a folder that doesn't have any non-Marco-Polo zip files in it.
 2. Make a copy of the folder, just in case something goes wrong. (I don't think anything will go wrong.)
