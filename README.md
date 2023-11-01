@@ -6,20 +6,20 @@ This helps you organize your polos (video messages) created with the [Marco Polo
 
 1. Wait until your polos are old enough that they are put in the "Trash" but not too old that they are permanently deleted.
 2. In the Marco Polo app click on
- 
-    <image src="./supplemental-docs/pictures/screenshot-1.jpg" width="200px" /> then
 
-    <image src="./supplemental-docs/pictures/screenshot-2.jpg" width="200px" /> then
+   <image src="./supplemental-docs/pictures/screenshot-1.jpg" width="200px" /> then
 
-    <image src="./supplemental-docs/pictures/screenshot-3.jpg" width="200px" /> then
+   <image src="./supplemental-docs/pictures/screenshot-2.jpg" width="200px" /> then
 
-    <image src="./supplemental-docs/pictures/screenshot-4.jpg" width="200px" /> then
+   <image src="./supplemental-docs/pictures/screenshot-3.jpg" width="200px" /> then
 
-    <image src="./supplemental-docs/pictures/screenshot-5.jpg" width="200px" /> then
+   <image src="./supplemental-docs/pictures/screenshot-4.jpg" width="200px" /> then
 
-    <image src="./supplemental-docs/pictures/screenshot-6.jpg" width="200px" /> then
+   <image src="./supplemental-docs/pictures/screenshot-5.jpg" width="200px" /> then
 
-    <image src="./supplemental-docs/pictures/screenshot-7.jpg" width="200px" />
+   <image src="./supplemental-docs/pictures/screenshot-6.jpg" width="200px" /> then
+
+   <image src="./supplemental-docs/pictures/screenshot-7.jpg" width="200px" />
 
 3. Repeat that for each conversation. Start with the most important conversations, because there may be a limit to how many conversations you can download per day.
 3. Wait for the email(s) to arrive. Go to the link in the email.
