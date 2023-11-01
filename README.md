@@ -62,7 +62,6 @@ Here, you will run the program with Deno. This is the recommended way to run the
 ```PowerShell
 deno run https://raw.githubusercontent.com/davidbludlow/marco-polo-archive-organizer/main/extract-polos.ts
 ```
-
 into the terminal, then press enter. If it says it doesn't know what "deno" is, then maybe restart your terminal or maybe you didn't install Deno correctly.
 7. When it asks, tell it where the folder with the zip files is.
 8. When it asks for permission to read or write that folder, say yes.
