@@ -39,7 +39,7 @@ Now you should have a bunch of zip files like:
 - John_A_4_of_4.zip
 - David_L_1_of_1.zip
 
-Then this program will extract the polos from those zip files and add them
+This program will extract the polos from those zip files and add them
 to folders with names like:
 
 - John_A
