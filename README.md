@@ -9,7 +9,7 @@ This helps you organize your polos (video messages) created with the [Marco Polo
 
    <image src="./supplemental-docs/pictures/screenshot-1.jpg" width="200px" /> then
 
-   <image src="./supplemental-docs/pictures/screenshot-2.jpg" width="200px" /> then
+   <image src="./supplemental-docs/pictures/screenshot-2.jpg" width="200px" /> (If you don't see that, then update Marco Polo, or maybe you are paying for unlimited storage) then
 
    <image src="./supplemental-docs/pictures/screenshot-3.jpg" width="200px" /> then
 
