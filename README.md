@@ -61,7 +61,7 @@ Here, you will run the program with Deno. This is the recommended way to run the
    - There isn't a normal installer file to install Deno that you download normally. Instead, you run a command in your terminal.
    - Open up a terminal. On Windows, you can do this by pressing the Windows key and typing "powershell" then pressing enter. On Mac, you can do this by pressing the Command key and the space bar at the same time, then typing "terminal" then pressing enter.
    - When looking at the [the Deno install instructions](https://docs.deno.com/runtime/manual/getting_started/installation#download-and-install) make sure you click on "Windows" or "macOS" depending on what kind of computer you have.
-   - The website will show you a bunch of options of commands that you can run to install deno. Pick the first one, unless you happen like and understand one of the other commands better. If you don't know how to do that (and if you have Windows) then just type `winget install deno` into the terminal and press enter.
+   - The website will show you a bunch of options of commands that you can run to install deno. Pick the first one, unless you happen like and understand one of the other commands better. For example, if you have Windows, then paste `irm https://deno.land/install.ps1 | iex` into the terminal and press enter.
 5. Open a terminal (if you don't already have one open).
 6. Copy and paste
    ```
