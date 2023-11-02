@@ -57,8 +57,12 @@ Here, you will run the program with Deno. This is the recommended way to run the
 1. Put all the downloaded zip files in a folder that doesn't have any non-Marco-Polo zip files in it.
 2. Make a copy of the folder, just in case something goes wrong. (I don't think anything will go wrong.)
 3. Look over the names of the files. If you have two correspondents with the same first name and last initial, then the program will probably mix their polos. Manually separate them before running the program.
-4. Install Deno. Deno is small and harmless to install. It is well-respected for its security features. See [here](https://docs.deno.com/runtime/manual/getting_started/installation) for install instructions.
-5. Open a terminal. (On Windows, you can do this by pressing the Windows key and typing "powershell" then pressing enter.)
+4. Install Deno. Deno is small and harmless to install. It is well-respected for its security features. See [here](https://docs.deno.com/runtime/manual/getting_started/installation#download-and-install) for install instructions, but those instructions are a bit weird, so here are some hints:
+   - There isn't a normal installer file to install Deno that you download normally. Instead, you run a command in your terminal.
+   - Open up a terminal. On Windows, you can do this by pressing the Windows key and typing "powershell" then pressing enter. On Mac, you can do this by pressing the Command key and the space bar at the same time, then typing "terminal" then pressing enter.
+   - When looking at the [the Deno install instructions](https://docs.deno.com/runtime/manual/getting_started/installation#download-and-install) make sure you click on "Windows" or "macOS" depending on what kind of computer you have.
+   - The website will show you a bunch of options of commands that you can run to install deno. Pick the first one, unless you happen like and understand one of the other commands better. If you don't know how to do that (and if you have Windows) then just type `winget install deno` into the terminal and press enter.
+5. Open a terminal (if you don't already have one open).
 6. Copy and paste
    ```
    deno run https://raw.githubusercontent.com/davidbludlow/marco-polo-archive-organizer/main/extract-polos.ts
