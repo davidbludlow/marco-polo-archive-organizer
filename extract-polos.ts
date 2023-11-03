@@ -1,28 +1,6 @@
-// This program extracts polos from all the zip files in a folder and keeps them
-// organized. Then it deletes the zip files that it has successfully extracted.
-// For example, if you have a folder with zip files like:
-//
-// - John_A_1_of_4.zip
-// - John_A_2_of_4.zip
-// - John_A_3_of_4.zip
-// - John_A_4_of_4.zip
-// - David_L_1_of_1.zip
-//
-// Then this program will extract the polos from those zip files and adds them
-// to folders with names like:
-//
-// - John_A
-// - David_L
-//
-// If those folders already existed and already contained polos, that is all
-// right. The newly extracted polos will be added to the already existing polos.
-//
-// You can run this program with Deno or use Deno compile it into an executable
-// file that can be run on a computer that doesn't have Deno installed. Don't
-// worry. Deno is possibly the most lightweight and harmless-to-install program
-// you have ever installed. See
-// https://docs.deno.com/runtime/manual/getting_started/installation if you need
-// to install Deno.
+// See
+// https://github.com/davidbludlow/marco-polo-archive-organizer/blob/main/README.md
+// for instructions on how to use this.
 
 import { walk } from 'https://deno.land/std@0.204.0/fs/walk.ts';
 import { readZip } from 'https://deno.land/x/jszip@0.11.0/mod.ts';
@@ -31,7 +9,7 @@ import { join, parse } from 'https://deno.land/std@0.204.0/path/mod.ts';
 // If you are just going to compile this program and run it as a standalone
 // executable, then you can delete the following version check code:
 const denoVersion = Deno.version.deno;
-const expectedDenoVersion = '1.37.2';
+const expectedDenoVersion = '1.38.0';
 if (expectedDenoVersion !== denoVersion) {
   console.warn(
     `Warning: This program was built for deno version ${expectedDenoVersion} but you have deno version ${denoVersion}. You can easily change your deno version (if you are connected to the internet) by running the command:
