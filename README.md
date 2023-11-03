@@ -45,7 +45,12 @@ to folders with names like:
 - John_A
 - David_L
 
-The program will delete each zip file after it is done pulling the polos out of it.
+The program will delete each zip file after it is done pulling the polos out of it. You can run the program on the same folder multiple times, each month that you download more zip files, and new polos will be added to the output folders without deleting the old polos.
+
+<details>
+<summary>A technical detail</summary>
+Technically, the program will replace old polos with new polos if they have the same name, but since the date and time is part of the name of the polo, this should not be a problem, unless you do video editing your polo archives.
+</details>
 
 There are two ways to run this program:
 
