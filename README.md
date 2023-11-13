@@ -62,20 +62,18 @@ Here, you will run the program with Deno. This is the recommended way to run the
 1. Put all the downloaded zip files in a folder that doesn't have any non-Marco-Polo zip files in it.
 2. Make a copy of the folder, just in case something goes wrong. (I don't think anything will go wrong.)
 3. Look over the names of the files. If you have two correspondents with the same first name and last initial, then the program will probably mix their polos. Manually separate them before running the program.
-4. Install Deno. Deno is small and harmless to install. It is well-respected for its security features. See [here](https://docs.deno.com/runtime/manual/getting_started/installation#download-and-install) for install instructions, but those instructions are a bit weird, so here are some hints:
-   - There isn't a normal installer file to install Deno that you download normally. Instead, you run a command in your terminal.
-   - Open up a terminal. On Windows, you can do this by pressing the Windows key and typing "powershell" then pressing enter. On Mac, you can do this by pressing the Command key and the space bar at the same time, then typing "terminal" then pressing enter.
-   - When looking at the [the Deno install instructions](https://docs.deno.com/runtime/manual/getting_started/installation#download-and-install) make sure you click on "Windows" or "macOS" depending on what kind of computer you have.
-   - The website will show you a bunch of options of commands that you can run to install Deno. Pick the first one, unless you happen to like and understand one of the other commands better. For example, if you have Windows, then paste `irm https://deno.land/install.ps1 | iex` into your terminal and press enter.
-5. Open a terminal (if you don't already have one open).
-6. Copy and paste
+4. If you are on your phone. Then switch over to a laptop or a desktop computer. and continue reading these instructions there.
+5. Open up a terminal. On Windows, you can do this by pressing the Windows key and typing "powershell" then pressing enter. On Mac, you can do this by pressing the Command key and the space bar at the same time, then typing "terminal" then pressing enter.
+6. Install Deno. Deno is small and harmless to install. It is well-respected for its security features. There isn't a normal installer file to install Deno that you download normally. Instead, you run a command in your terminal. I could just tell you what command to enter into the terminal, but instead I am telling you to run I am going to tell you a page where you can go to find the command. The website will show you a bunch of options of commands that you can run to install Deno. Pick the first one, unless you happen to like and understand one of the other commands better. When looking at the [the Deno install instructions](https://docs.deno.com/runtime/manual/getting_started/installation#download-and-install) MAKE SURE YOU CLICK ON "Windows" or "macOS" depending on what kind of computer you have. For example, if you have Windows, then paste `irm https://deno.land/install.ps1 | iex` into your terminal and press enter.
+7. Open a terminal (if you don't already have one open).
+8. Copy and paste
    ```
    deno run https://raw.githubusercontent.com/davidbludlow/marco-polo-archive-organizer/main/extract-polos.ts
    ```
    into the terminal, then press enter. If it says it doesn't know what "deno" is, then maybe restart your terminal or maybe you didn't install Deno correctly.
-7. When it asks, tell it where the folder with the zip files is.
-8. When it asks for permission to read or write that folder, say yes.
-9. After waiting for the program to finish, check each conversation and make sure that both sides of the conversation are there! If not, then call your friend and ask them to change their Marco Polo settings to allow other people to download their polos.
+9. When it asks, tell it where the folder with the zip files is.
+10. When it asks for permission to read or write that folder, say yes.
+11. After waiting for the program to finish, check each conversation and make sure that both sides of the conversation are there! If not, then call your friend and ask them to change their Marco Polo settings to allow other people to download their polos.
 
 </details>
 
