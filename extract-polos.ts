@@ -9,7 +9,7 @@ import { join, parse } from 'https://deno.land/std@0.204.0/path/mod.ts';
 // If you are just going to compile this program and run it as a standalone
 // executable, then you can delete the following version check code:
 const denoVersion = Deno.version.deno;
-const expectedDenoVersion = '1.38.0';
+const expectedDenoVersion = '1.38.1';
 if (expectedDenoVersion !== denoVersion) {
   console.warn(
     `Warning: This program was built for deno version ${expectedDenoVersion} but you have deno version ${denoVersion}. You can easily change your deno version (if you are connected to the internet) by running the command:
