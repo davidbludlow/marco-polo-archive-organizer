@@ -2,9 +2,9 @@
 // https://github.com/davidbludlow/marco-polo-archive-organizer/blob/main/README.md
 // for instructions on how to use this.
 
-import { walk } from 'https://deno.land/std@0.204.0/fs/walk.ts';
+import { walk } from 'https://deno.land/std@0.206.0/fs/walk.ts';
 import { readZip } from 'https://deno.land/x/jszip@0.11.0/mod.ts';
-import { join, parse } from 'https://deno.land/std@0.204.0/path/mod.ts';
+import { join, parse } from 'https://deno.land/std@0.206.0/path/mod.ts';
 
 // If you are just going to compile this program and run it as a standalone
 // executable, then you can delete the following version check code:
