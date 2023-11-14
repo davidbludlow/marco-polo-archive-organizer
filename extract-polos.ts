@@ -5,20 +5,28 @@
 import { walk } from 'https://deno.land/std@0.206.0/fs/walk.ts';
 import { readZip } from 'https://deno.land/x/jszip@0.11.0/mod.ts';
 import { join, parse } from 'https://deno.land/std@0.206.0/path/mod.ts';
+import { testRange } from 'https://deno.land/std@0.206.0/semver/test_range.ts';
+import { tryParse as tryParseVersion } from 'https://deno.land/std@0.206.0/semver/try_parse.ts';
+import { parseRange } from 'https://deno.land/std@0.206.0/semver/parse_range.ts';
 
 // If you are just going to compile this program and run it as a standalone
-// executable, then you can delete the following version check code:
-const denoVersion = Deno.version.deno;
-const expectedDenoVersion = '1.38.1';
-if (expectedDenoVersion !== denoVersion) {
+// executable, then you may delete all the following version check code:
+const parsedDenoVersion = tryParseVersion(Deno.version.deno);
+const minimumDenoVersion = '1.38.1';
+if (
+  !parsedDenoVersion ||
+  !testRange(parsedDenoVersion, parseRange(`>=${minimumDenoVersion}`)) ||
+  // Deno v2 probably hasn't come out yet
+  !testRange(parsedDenoVersion, parseRange('<2'))
+) {
   console.warn(
-    `Warning: This program was built for deno version ${expectedDenoVersion} but you have deno version ${denoVersion}. You can easily change your deno version (if you are connected to the internet) by running the command:
+    `Warning: This program was built for deno version ${minimumDenoVersion} but you have deno version ${Deno.version.deno}. You can easily change your deno version (if you are connected to the internet) by running the command:
 
-deno upgrade --version ${expectedDenoVersion}
+deno upgrade --version ${minimumDenoVersion}
 
 Then try running this program again. When you are done, you can always easily go back to the version of deno that you have right now by running:
 
-deno upgrade --version ${denoVersion}
+deno upgrade --version ${Deno.version.deno}
 
 No stress!
 `,
