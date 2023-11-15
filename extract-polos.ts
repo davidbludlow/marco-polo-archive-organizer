@@ -43,7 +43,7 @@ while (!inputFolderPath) {
 }
 
 console.log(
-  'Note that this program is slower than most other zip extractors, so it may take a few minuets to extract each zip file.' +
+  'Note that this program is slower than most other zip extractors, so it may take a few minutes to extract each zip file.' +
     // This flag is used when the program is compiled via `deno task compile`
     (Deno.args[1] === '--suppress-talking-about-permissions'
       ? ''
