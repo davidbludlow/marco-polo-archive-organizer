@@ -42,10 +42,13 @@ while (!inputFolderPath) {
   );
 }
 
+const runningAsStandaloneExecutable =
+  // Check for the flag that is set by deno.jsonc when the program is compiled
+  // via `deno task compile`
+  Deno.args[1] === '--running-as-a-standalone-executable';
 console.log(
   'Note that this program is slower than most other zip extractors, so it may take a few minutes to extract each zip file.' +
-    // This flag is used when the program is compiled via `deno task compile`
-    (Deno.args[1] === '--suppress-talking-about-permissions'
+    (runningAsStandaloneExecutable
       ? ''
       : ` (I could have made it faster, but I wanted this program to be runnable with Deno, because it is safer for you. A program run with Deno doesn't have permission to do anything harmful to your computer or your data unless you give it permission to do so.)
 `),
@@ -53,6 +56,7 @@ console.log(
 
 await Deno.permissions.request({ name: 'read', path: inputFolderPath });
 await Deno.permissions.request({ name: 'write', path: inputFolderPath });
+console.log();
 
 let zipFileCount = 0;
 for await (const entry of walk(inputFolderPath)) {
@@ -83,9 +87,22 @@ for await (const entry of walk(inputFolderPath)) {
 }
 
 if (zipFileCount === 0) {
-  console.log(
-    `No zip files with polos found in "${inputFolderPath}". You need to specify a folder that contains zip files with polos.`,
-  );
+  const message = `No zip files containing polos were found${
+    runningAsStandaloneExecutable ? '' : ` in "${inputFolderPath}"`
+  }.
+
+This might mean that you've already run this program since it deletes the zip files after copying your polos into folders (one folder per conversation). If you still have zip files, ${
+    runningAsStandaloneExecutable
+      ? 'close this program, then move this program file into the folder with your polo zip files, and then run the program again.'
+      : 'try running this program again, but this time specify a folder that contains zip files that have polos.'
+  }
+
+For help, see https://github.com/davidbludlow/marco-polo-archive-organizer/blob/main/README.md`;
+  if (runningAsStandaloneExecutable) {
+    // Prevent the terminal from automatically closing so the user can read the
+    // message.
+    prompt(message);
+  } else console.log(message);
 } else {
   console.log(
     `Done extracting polos from the zip files in "${inputFolderPath}"`,

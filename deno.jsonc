@@ -2,7 +2,7 @@
   "tasks": {
     // Compiling is not necessary.
     // The "." part means "the current directory".
-    "compile": "deno compile --allow-read=. --allow-write=. extract-polos.ts . --suppress-talking-about-permissions"
+    "compile": "deno compile --allow-read=. --allow-write=. extract-polos.ts . --running-as-a-standalone-executable"
   },
   "fmt": {
     "singleQuote": true,
