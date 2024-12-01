@@ -2,22 +2,24 @@
 // https://github.com/davidbludlow/marco-polo-archive-organizer/blob/main/README.md
 // for instructions on how to use this.
 
-import { walk } from 'https://deno.land/std@0.206.0/fs/walk.ts';
+import { walk } from 'jsr:@std/fs@1.0.6';
 import { readZip } from 'https://deno.land/x/jszip@0.11.0/mod.ts';
-import { join, parse } from 'https://deno.land/std@0.206.0/path/mod.ts';
-import { testRange } from 'https://deno.land/std@0.206.0/semver/test_range.ts';
-import { tryParse as tryParseVersion } from 'https://deno.land/std@0.206.0/semver/try_parse.ts';
-import { parseRange } from 'https://deno.land/std@0.206.0/semver/parse_range.ts';
+import { join, parse } from 'jsr:@std/path@1.0.8';
+import {
+  parseRange,
+  satisfies,
+  tryParse as tryParseVersion,
+} from 'jsr:@std/semver@1.0.3';
 
 // If you are just going to compile this program and run it as a standalone
 // executable, then you may delete all the following version check code:
 const parsedDenoVersion = tryParseVersion(Deno.version.deno);
-const minimumDenoVersion = '1.38.1';
+const minimumDenoVersion = '2.1.2';
 if (
   !parsedDenoVersion ||
-  !testRange(parsedDenoVersion, parseRange(`>=${minimumDenoVersion}`)) ||
+  !satisfies(parsedDenoVersion, parseRange(`>=${minimumDenoVersion}`)) ||
   // Deno v3 probably hasn't come out yet
-  !testRange(parsedDenoVersion, parseRange('<3'))
+  !satisfies(parsedDenoVersion, parseRange('<3'))
 ) {
   console.warn(
     `Warning: This program was built for deno version ${minimumDenoVersion} but you have deno version ${Deno.version.deno}. You can easily change your deno version (if you are connected to the internet) by running the command:
