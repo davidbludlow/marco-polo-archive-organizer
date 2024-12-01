@@ -79,5 +79,6 @@
   ],
   "cSpell.words": [
     "Deno"
-  ]
+  ],
+  "vue.server.hybridMode": false
 }
