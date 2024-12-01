@@ -16,8 +16,8 @@ const minimumDenoVersion = '1.38.1';
 if (
   !parsedDenoVersion ||
   !testRange(parsedDenoVersion, parseRange(`>=${minimumDenoVersion}`)) ||
-  // Deno v2 probably hasn't come out yet
-  !testRange(parsedDenoVersion, parseRange('<2'))
+  // Deno v3 probably hasn't come out yet
+  !testRange(parsedDenoVersion, parseRange('<3'))
 ) {
   console.warn(
     `Warning: This program was built for deno version ${minimumDenoVersion} but you have deno version ${Deno.version.deno}. You can easily change your deno version (if you are connected to the internet) by running the command:
