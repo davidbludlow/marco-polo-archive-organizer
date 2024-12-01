@@ -61,7 +61,7 @@ await Deno.permissions.request({ name: 'write', path: inputFolderPath });
 console.log();
 
 let zipFileCount = 0;
-for await (const entry of walk(inputFolderPath)) {
+for await (const entry of walk(inputFolderPath, { maxDepth: 1 })) {
   if (entry.isFile && entry.name.endsWith('.zip')) {
     const zipFilePath = entry.path;
     const { base: zipFileName } = parse(zipFilePath);
